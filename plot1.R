@@ -5,11 +5,11 @@
 
 
 plot1 <- function(){
-	plot1png <- "plot1.png"
-	data<-getData()	
+	plotpng <- "plot1.png"
+	daf<-getData()	
 	## Create Histogram
-	png(filename = plot1png, width = 480, height = 480)
-	with(data, hist(Global_active_power, col="red",
+	png(filename = plotpng, width = 480, height = 480)
+	with(df, hist(Global_active_power, col="red",
 		main="Global Active Power",
 		xlab="Global Active Power (kilowatts)",
 		ylab="Frequency"))
